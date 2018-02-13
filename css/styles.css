@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat');
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
+
+body {
+  background: linear-gradient(to bottom, rgba(130,209,250,1) 0%,rgba(244,240,210,0.57) 100%);
+  background-size: 300% 300%;
+  margin: 0;
+  padding: 0;
+  }
+
+.tree {
+  width: 300px;
+  height: 305px;
+  margin: 0 auto;
+  background: url('../img/treefinal.png') left center;
+  animation: treeplay 3s steps(9) infinite;
+  z-index: 1;
+  margin-top: -250px;
+}
+
+@keyframes treeplay {
+ 100% { background-position: -2700px; }
+}
+
+h1 {
+  font-family: 'Caveat', cursive;
+  color: #FFFFFF;
+  font-size: 7em;
+  text-align: center;
+  margin-top: 93px;
+  transition: font-size 2s;
+}
+.indextitle:hover {
+  font-size: 9em;
+}
+
+.navi{
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  color: #FFFFFF;
+  font-size: 1em;
+  margin-top: -50px;
+}
+.navi p {
+  display: inline;
+  padding: 0px 15px 0px 10px;
+  margin: 0 10px 0 10px;
+  font-size: 1.5em;
+  border: 1px dashed #FFFFFF;
+}
+p a:link, p a:visited {
+  color: white;
+  text-decoration: none;
+}
+p a:hover {
+  text-decoration: underline;
+}
+
+.cloud1 {
+  position: relative;
+  top: -300px;
+  /* left: -30px; */
+  animation: cloud1move 30s ease infinite;
+}
+@keyframes cloud1move {
+  0% {left: 0;
+      opacity: 0;}
+  25% {opacity: 1;}
+  50%{left: 10%;
+      opacity: .5;}
+  75%{opacity: 1;}
+  100% {left: 20%;
+      opacity: 0;}
+
+}
+.cloud2 {
+  position: relative;
+  left: 400px;
+  top: 40px;
+  animation-delay: 4s;
+  animation: cloud2move 30s ease infinite;
+  z-index: -1;
+}
+@keyframes cloud2move {
+  0% {left: 0;
+      opacity:0;}
+  50% {left: 25%;
+      opacity: 1;}
+  70% {opacity:.5}
+  80%{opacity: 1;}
+  100% {left:50%;
+      opacity:0;}
+}
+.cloud4 {
+  position: relative;
+  top: -350px;
+  right: -350px;
+  animation: cloud3move 30s ease infinite;
+}
+@keyframes cloud3move {
+  0% {left: 5%;
+      opacity: 0;}
+  25% {left: 10%;
+      opacity: 1;}
+  100% {left: 20%;
+      opacity: 0; }
+}
+.land {
+  width: 1280px;
+  height: 52px;
+  background-color: black;
+  position: relative;
+
+}
+
+ul {
+  text-align: center;
+  background-color: rgba(183, 200, 226, 0.5);
+  margin: 0;
+  padding: 5px;
+}
+li {
+  display: inline;
+  font-family: 'Caveat', cursive;
+  font-size: 1.5em;
+  padding: 0 20px 0 20px;
+  border: 1px dashed #FFFFFF;
+}
+li a:link,li a:visited {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+li a:hover {
+  text-decoration: underline;
+  color: rgb(130,209,250);
+}
+#p1body {
+  background: rgba(12,43,64,1);
+}
+#p1body .snowbg {
+  background-image: url(../img/sbg500.png), url(../img/sbg400.png), url(../img/sbg300.png);
+  animation: fall 30s linear infinite;
+  z-index: 1;
+  width: 100%;
+  height:100%;
+  position: absolute;
+
+}
+@keyframes fall {
+  0% {background-position: 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+/* STYLES AND ANIM FOR P IN PART1 */
+ p {
+  font-family: 'Nothing You Could Do', cursive;
+  color: white;
+  font-size: 2em;
+  display:inline;
+  padding-left: 10px;
+  padding-right: 2px;
+  transition: font-size 2s;
+}
+#p1body .lyricp1 {
+  position: relative;
+  top: 230px;
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+}
+@keyframes fadein {
+  from
+    { opacity:0; }
+  to
+    { opacity:1; }
+}
+.fadein {
+  opacity: 0;
+  animation: fadein ease 1;
+  animation-fill-mode:forwards;
+  animation-duration:5s;
+}
+.like {animation-delay: .2s;}
+.atext {animation-delay: .4s;}
+.small {animation-delay: .6s;}
+.small:hover{
+      font-size: .5em;
+}
+.piece {animation-delay: .8s;}
+.of {animation-delay: 1s;}
+.dust {animation-delay: 1.2s;}
+.that {animation-delay: 1.4s;}
+.floats {animation-delay: 1.6s;}
+.in {animation-delay: 1.8s;}
+.the {animation-delay: 2s;}
+.air {animation-delay: 2.2s;}
+.if {animation-delay: 2.4s;}
+.the2 {animation-delay: 2.6s;}
+.flying {animation-delay: 2.8s;}
+.snow {animation-delay: 3s;}
+.is {animation-delay: 3.2s;}
+.me {animation-delay: 3.4s;}
+.itext {animation-delay: 3.6s;}
+.could {animation-delay: 3.8s;}
+.reach {animation-delay: 4s;}
+.you {animation-delay: 4.2s;}
+.faster {animation-delay: 4.2s;}
+
+
+
+/* END P ANIMATIONS */
+#part3 {
+  animation: background .5s ease-in 1;
+  margin: 0;
+  padding: 0;
+  animation-fill-mode: forwards;
+}
+@keyframes background {
+  from {background-color: black;
+      }
+
+  to {
+    background: linear-gradient(to bottom, rgba(130,209,250,1) 0%,rgba(244,240,210,0.57) 100%);
+    background-size: 300% 300%;}
+  }
+.flower {
+    width: 300px;
+    height: 275px;
+    margin: 0 auto;
+    background: url('../img/flower2.png') left center;
+    animation: play 4s steps(15) infinite;
+    margin-top: 250px;
+    animation-delay: 6s
+  }
+
+  @keyframes play {
+
+   100% { background-position: -4500px;
+          }
+  }
+}
+
+.lyricp3 p {
+  font-family: 'Nothing You Could Do', cursive;
+  color: white;
+  font-size: 3em;
+  display:inline;
+  padding-left: 10px;
+  padding-right: 2px;
+}
+.lyricp3 {
+  position: relative;
+  top: 200px;
+  margin: 0 auto;
+  text-align: center;
+  width: 500px;
+}
+.cherry {animation-delay: 2.2s;}
+.blossoms {animation-delay: 2.6s;}
+.aretext {animation-delay: 3s;}
+.blooming {animation-delay: 3.4s;}
+.thetext {animation-delay: 3.8s;}
+.winter {animation-delay: 4.2s;}
+.istext {animation-delay: 4.6s;}
+.ending {animation-delay: 5s;}
+
+#part2 {
+  background: linear-gradient(4deg, #f28055, #745534, #000000);
+  background-size: 400% 400%;
+  animation: part2bg 30s ease 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes part2bg {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+.lyricp2 {
+  text-align: center;
+  width:600px;
+  position: relative;
+  top: 100px;
+  left: 200px;
+}
+
+.man {
+  position: relative;
+  z-index: 3;
+  top: 220px;
+}
+.mountain{
+  position: relative;
+  z-index: 2;
+  top: -100px;
+}
+.moon {
+  display: inline;
+  position: relative;
+  top: -700px;
+  right: -1000px;
+  animation: moonlight 60s ease 1;
+  animation-fill-mode: forwards;
+}
+@keyframes moonlight {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.sun {
+  position: relative;
+  z-index: 1;
+  top: -450px;
+  left: 500px;
+  animation: sunset 40s ease 1;
+  animation-fill-mode: forwards;
+}
+@keyframes sunset {
+  0%{top:-425px;}
+  10%{top:-450px;}
+  25%{top:-400px;}
+  50%{top:-350px;}
+  70%{top:-320px;}
+  100%{top:-300px;}
+}
+.first{animation-delay:5s;}
+.second{animation-delay: 14s;}
+.third{animation-delay:20s;}
